@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    /* background-image: url(img/bg.jpg); */
+}
+
+nav div {
+    display: inline-block;
+}
+
+#logo {
+    margin: 20px;
+    padding: 5px;
+}
+
+#search {
+    margin-left: 320px;
+    position: absolute;
+    margin-top: 35px;
+}
+
+#search input {
+    height: 25px;
+    width: 350px;
+    border-radius: 40px;
+    text-align: center;
+    border: 5px soild white;
+}
+
+#user {
+    position: relative;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+div {
+    display: inline-block;
+}
+
+#userimg {
+    width: 50px;
+}
+
+main {
+    margin: 30px;
+}
+
+aside {
+    position: absolute;
+}
+
+#fam {
+    display: inline;
+}
+
+#fam .cards {
+    height: 225px;
+    width: 2255px;
+    display: inline;
+    cursor: pointer;
+    position: relative;
+}
+
+#fam .cards img {
+    height: 225px;
+    width: 225px;
+    /* display: inline; */
+    margin: 20px;
+    border-radius: 330px;
+    backface-visibility: hidden;
+}
+
+#fam .cards .name {
+    text-align: center;
+    margin-top: 100px;
+    /* height: 225px;
+    width: 225px; */
+    border-radius: 300px;
+    display: hidden;
+    background-color: rgb(60, 61, 63);
+}
+
+#section-1 {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 900px;
+}
+
+.overlay {
+    position: absolute;
+    top: -230px;
+    bottom: 0;
+    left: 20px;
+    right: 0;
+    height: 225px;
+    width: 225px;
+    border-radius: 300px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: rgb(60, 61, 63);
+}
+
+#fam .cards:hover .overlay {
+    opacity: 0.6;
+}
+
+#section-2 {
+    position: relative;
+    float: right;
+    width: 30%;
+    height: 900px;
+}
+
+#heading {
+    display: block;
+    font-weight: bold;
+}
+
+#heading h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.SCard {
+    position: relative;
+    display: block;
+    margin: 15px;
+    font-weight: 200;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.SCard img {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline;
+    border-radius: 30px;
+}
+
+.SCard h2 {
+    display: inline;
+    align-items: center;
+    border-radius: 30px;
+    width: 100%;
+    padding: 20px;
+}
+
+.short {
+    height: 50px;
+    width: 50px;
+}
+
+.SCard .play img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+
+.SCard:hover .play img {
+    opacity: 0.7;
+}
+
+#all-songs {
+    display: block;
+    margin: 20px;
+}
+
+#botom {
+    position: sticky;
+    bottom: 0;
+    display: inline-block;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+}
+
+#bar {
+    background-color: rgb(60, 61, 63);
+    width: 70%;
+    margin: 25px;
+}
+
+#bar:hover {
+    cursor: pointer;
+}
+
+.songs {
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    /* margin: 30px; */
+    cursor: pointer;
+}
+
+.songs img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    border-radius:25px ;
+}
+
+.songs h2 {
+    display: inline-block;
+}
+
+#buttons img {
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#pause {
+    display: none;
+}

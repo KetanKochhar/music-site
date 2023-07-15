@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music webpage</title>
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <h1>Musically</h1>
+            <h4>Music world</h4>
+        </div>
+        <div id="search">
+            <input type="text" placeholder="Search here">
+            <div>hello world </div>
+        </div>
+        <div id="user">
+            <img id="userimg" src="img/user.png" alt="Error loading Image">
+        </div>
+    </nav>
+    <main>
+        <aside id="section-1">
+            <div id="fam">
+                <div class="cards"><img src="img/fam/1.jpg" alt="Error loading Image">
+                    <div class="overlay">
+                        <h2 class="name">Badshah</h2>
+                    </div>
+                </div>
+                <div class="cards"><img src="img/fam/2.jpg" alt="Error loading Image">
+                    <div class="overlay">
+                        <h2 class="name">King</h2>
+                    </div>
+                </div>
+                <div class="cards"><img src="img/fam/3.jpg" alt="Error loading Image">
+                    <div class="overlay">
+                        <h2 class="name">Tulsi <br> Kumar</h2>
+                    </div>
+                </div>
+                <div class="cards"><img src="img/fam/4.jpg" alt="Error loading Image">
+                    <div class="overlay">
+                        <h2 class="name">Darshan <br> Raval</h2>
+                    </div>
+                </div>
+                <div class="cards"><img src="img/fam/5.jpg" alt="Error loading Image">
+                    <div class="overlay">
+                        <h2 class="name">Arijit <br> Singh</h2>
+                    </div>
+                </div>
+                <div class="cards"><img src="img/fam/6.jpg" alt="Error loading Image">
+                    <div class="overlay">
+                        <h2 class="name">Vishal <br> Mishra</h2>
+                    </div>
+                </div>
+                <hr>
+                <h1>All Time Fav </h1>
+                <div class="cards"><img src="img/s/Bolo Har Har Har.jpg" alt="Error loading Image" >
+                    <div class="overlay" id="1" onclick="GetName(this);Queue()">
+                        <h2 class="name">Bolo Har Har </h2>
+                    </div>
+                </div>
+                <div class="cards"><img src="img/s/man meri jaan.jpg" alt="Error loading Image">
+                    <div class="overlay" id="5" onclick="GetName(this);Queue()">
+                        <h2 class="name">Maan Meri Jaan</h2>
+                    </div>
+                </div>
+                <div class="cards"><img src="img/s/tum hi aana.jpg" alt="Error loading Image">
+                    <div class="overlay" id="10" onclick="GetName(this);Queue()">
+                        <h2 class="name">Tum Hi Aana</h2>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <aside id="section-2">
+            <div id="heading">
+                <h1>History</h1>
+            </div>
+            <div id="songs">
+                <!-- <div class="SCard">
+                    <img class="short" src="img/s/man meri jaan.jpg" alt="Error loading Image">
+                    <h2>Maan Meeri Jaan</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/tum hi aana.jpg" alt="Error loading Image">
+                    <h2>Tum Hi Aana</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/Bolo Har Har Har.jpg" alt="Error loading Image">
+                    <h2>Bolo Har Har</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/namo namo.jpg" alt="Error loading Image">
+                    <h2>Namo Namo Shankra</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/sanak.jpg" alt="Error loading Image">
+                    <h2>Sanak</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/Ek Tarfa.jpg" alt="Error loading Image">
+                    <h2>Ek Tarfa</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/toxic.jpg" alt="Error loading Image">
+                    <h2>Toxic</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/khairiyat.jpg" alt="Error loading Image">
+                    <h2>Khairiyat</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/Har Har Gange.jpg" alt="Error loading Image">
+                    <h2>Har Har Gange</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div>
+                <div class="SCard">
+                    <img class="short" src="img/s/tanhaai.jpg" alt="Error loading Image">
+                    <h2>Tanhaai</h2>
+                    <div class="play"><img src="img/play.jpg" alt=""></div>
+                </div> -->
+
+            </div>
+        </aside>
+    </main>
+    <hr><h1>All songs are here you can also search them </h1>
+    <div id="all-songs">
+        <span class="songs" id="1" onclick="GetName(this);Queue()">
+            <img src="img/s/bolo har har har.jpg" alt="">
+            <h2 class="search">Bolo Har Har</h2>
+        </span>
+        <span class="songs" id="2" onclick="GetName(this);Queue()">
+            <img src="img/s/Ek Tarfa.jpg" alt="">
+            <h2 class="search">Ek Tarfa</h2>
+        </span>
+        <span class="songs" id="3" onclick="GetName(this);Queue()">
+            <img src="img/s/Har Har Gange.jpg" alt="">
+            <h2 class="search">Har Har Gange</h2>
+        </span>
+        <span class="songs" id="4" onclick="GetName(this);Queue()">
+            <img src="img/s/khairiyat.jpg" alt="">
+            <h2 class="search">Khairiyat</h2>
+        </span>
+        <span class="songs" id="5" onclick="GetName(this);Queue()">
+            <img src="img/s/man meri jaan.jpg" alt="">
+            <h2 class="search">Man Meri Jaan</h2>
+        </span>
+        <span class="songs" id="6" onclick="GetName(this);Queue()">
+            <img src="img/s/namo namo.jpg" alt="">
+            <h2 class="search">Namo Namo</h2>
+        </span>
+        <span class="songs" id="7" onclick="GetName(this);Queue()">
+            <img src="img/s/sanak.jpg" alt="">
+            <h2 class="search">Sanak</h2>
+        </span>
+        <span class="songs" id="8" onclick="GetName(this);Queue()">
+            <img src="img/s/tanhaai.jpg" alt="">
+            <h2 class="search">Tanhaai</h2>
+        </span>
+        <span class="songs" id="9" onclick="GetName(this);Queue()">
+            <img src="img/s/toxic.jpg" alt="">
+            <h2 class="search">Toxic</h2>
+        </span>
+        <span class="songs" id="10"onclick="GetName(this);Queue()">
+            <img src="img/s/tum hi aana.jpg" alt="">
+            <h2 class="search" >Tum Hi Aana</h2>
+        </span>
+    </div>
+    <div id="botom">
+        <div>
+            <h3 id="SongName">Nothing Playing</h3>
+        </div>
+        <div id="buttons">
+            <img id="back" src="img/backward.png" alt="">
+            <img id="play" src="img/play.png" alt="">
+            <img id="pause" src="img/pause.png" alt="">
+            <img id="next" src="img/fordward.png" alt="">
+        </div>
+        <input id="bar" type="range" value="0" min="0" max="100">
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
